@@ -15,7 +15,8 @@
       <%= xyz.description %>
     </td>
     <td>
-      <%= xyz.created_at %>
+      <%= xyz.created_at.to_s %> |
+      <%= time_ago_in_words(xyz.created_at) %> ago
     </td>
   </tr>
   <% end %>
